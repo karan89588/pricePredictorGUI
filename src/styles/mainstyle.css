@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700&display=swap');
 h1{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
     color:cornflowerblue;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 .container{
     margin-top: 2rem;
-    width:20rem;
-    height:20rem;
+    width:30rem;
+    height:30rem;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
 }
 .outer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 .main{
     display: flex;
@@ -32,17 +35,26 @@ h1{
 .btn{
     margin-top:2rem;
     background-color: cadetblue;
-    width:15rem;
-    height:2rem;
+    width:20rem;
+    height:3rem;
     border:none;
     border-radius: 5px;
+    font-size: 1rem;;
 }
 .btn:hover{
     cursor:pointer;
     background-color: rgb(74, 129, 131);
 }
 select{
-    width:10rem;
+    width:15rem;
+    height:2rem;
     border:none;
     border-radius: 5px;
+}
+.white{
+    background-color: white;
+    
+}
+span{
+    margin-right:2px;
 }

@@ -47,7 +47,7 @@ export default function Main() {
           <option value={""} name='name'selected>--Name--</option>
           <option value={"0"} name='name'>Potato</option>
           <option value={"1"} name='name'>Onion</option>
-          <option value={"2"} name='name'>Tamato</option>
+          <option value={"2"} name='name'>Tomato</option>
           <option value={"3"} name='name'>Lady Finger</option>
           <option value={"4"} name='name'>Ginger</option>
         </select>
@@ -58,7 +58,7 @@ export default function Main() {
           <option value={""} name='season'>--Season--</option>
           <option value={"0"} name='season'>Winter</option>
           <option value={"1"} name='season'>Spring</option>
-          <option value={"2"} name='season'>Summar</option>
+          <option value={"2"} name='season'>Summer</option>
           <option value={"3"} name='season'>Monsoon</option>
           <option value={"4"} name='season'>Autumn</option>
           <option value={"5"} name='season'>Pre-Winter</option>
@@ -95,7 +95,12 @@ export default function Main() {
        </div>
       </div>
         </form>
-        {(output==='Please Select all Fields.'&&output)||(output&&`Rs/Kg ${(parseFloat(output).toFixed(2))}`)}
+        {(output==='Please Select all Fields.'&&output)||(output&&`${(parseFloat(output).toFixed(2))} Rs/Kg`)}
+      </div>
+      <div className='container white'>
+        <div>
+          <img src={require('../images/graph.jpg')} alt='Graph' width={500} height={350}/>
+        </div>
       </div>
     </div>
   )
